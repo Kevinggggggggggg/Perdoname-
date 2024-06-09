@@ -1,32 +1,113 @@
-# Prerequisites
-*.d
+<! DOCTYPE html>
+<html lang="es">
+<cabeza>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <título>¿Me perdonas? </título>
+  <estilo>
+ cuerpo {  
+ margen: 0;
+ relleno: 0;
+ Pantalla: Flex;
+ justify-content: centro;
+ align-items: centro;
+ Altura: 100VH;
+ color de fondo: #f3f3f3;
+ familia-fuente: Arial, sans-serif;
+    }
+    #container {
+ text-align: centro;
+    }
+    h1 {
+ tamaño de fuente: 32px;
+      color: #333;
+    }
+    #buttons {
+ margen superior: 20px;
+ Pantalla: Flex;
+ justify-content: centro;
+ align-items: centro;
+    }
+ botón {
+ margen: 10px;
+ relleno: 10px 20px;
+ tamaño de fuente: 18px;
+      color: #fff;
+ color de fondo: #4CAF50;
+ Frontera: ninguna;
+ radio del borde: 5px;
+ cursor: puntero;
+ transición: color de fondo 0.3s;
+    }
+    button:hover {
+ color de fondo: #45a049;
+    }
+    #btnNo {
+ color de fondo: #f44336;
+    }
+    #btnNo:hover {
+ color de fondo: #d32f2f;
+    }
+    img {
+ margen superior: 30px;
+ ancho máximo: 100%;
+ radio del borde: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  </estilo>
+  <Guión>
+    función acciónParaCuandoEllaDigaQueSi() {
+      alert("¡Yeiii te amooooo! ❤️ ");
+    }
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+    function mueveElBoton() {
+      const width = ventana.innerWidth;
+      const height = ventana.innerHeight;
 
-# Precompiled Headers
-*.gch
-*.pch
+      const newWidth = Matemáticas.random() * ancho;
+      const newHeight = Matemáticas.random() * altura;
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+      const btnNo = documento.getElementById("btnNo");
+      btnNo.estilo.posición = "absoluto";
+      btnNo.estilo.izquierda = newWidth + "px";
+      btnNo.estilo.top = newHeight + "px";
+    }
+  </Guión>
+</cabeza>
+<cuerpo>
+    <div id="contenedor">
+      <h1>¿Me perdonas? </h1>
+      <div id="botones">
+        <button onclick="accionParaCuandoEllaDigaQueSi()" id="btnSi">Sí</button>
+        <button id="btnNo" onmouseover="mueveElBoton()">No</button>
+      </Div>
+      <img src="img/2.jpeg" alt="" width="200">
+    </Div>
 
-# Fortran module files
-*.mod
-*.smod
+    <Guión>
+      función acciónParaCuandoEllaDigaQueSi() {
+        const respuesta = confirm("¿entonces si me perdonas?");
+        if (respuesta) {
+          Redireccionar a la nueva página si responde "Sí"
+          ventana.ubicación.href = "opcionsi.html";
+        } más {
+          alert("Espero que puedas reconsiderarlo 😊 ");
+        }
+      }
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+      function mueveElBoton() {
+        const width = ventana.innerWidth;
+        const height = ventana.innerHeight;
 
-# Executables
-*.exe
-*.out
-*.app
+        const newWidth = Matemáticas.random() * ancho;
+        const newHeight = Matemáticas.random() * altura;
+
+        const btnNo = documento.getElementById("btnNo");
+        btnNo.estilo.posición = "absoluto";
+        btnNo.estilo.izquierda = newWidth + "px";
+        btnNo.estilo.top = newHeight + "px";
+      }
+    </Guión>
+  </cuerpo>
+  </HTML>
